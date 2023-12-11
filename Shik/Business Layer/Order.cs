@@ -23,23 +23,34 @@ namespace Business_Layer
         [MaxLength(20)]
         public OrderStatus Status { get; set; }
 
-        [Required]
+        
         public Customer Customer { get; set; }
-        [ForeignKey("Customer")]
-        public string CustomerId { get; set; }
-        public List<Clothes> Clothes { get; set; }
 
+        [ForeignKey("Customer")]
+        public int CustomerId { get; set; }
+        public Shipping Shipping { get; set; }
+
+        [ForeignKey("Shipping")]
+        public int ShippingId { get; set; }
+        
+        public List<OrderClothes> OrderClothes { get; set; }
+        public List<Coupon> Coupons { get; set; }
         public Order()
         {
-            Clothes = new List<Clothes>();
+            OrderClothes = new List<OrderClothes>();
+            
+            Coupons = new List<Coupon>();
         }
-        public Order(string address, Customer customer)
+        public Order(string address, Customer customer,Shipping shipping)
         {
+            Shipping= shipping;
             Address = address;
             Date = DateTime.Now;
             Status = OrderStatus.New;
             Customer = customer;
-            Clothes = new List<Clothes>();
+            Coupons=new List<Coupon>();
+            OrderClothes= new List<OrderClothes>();
+            
         }
     }
 }

@@ -26,11 +26,11 @@ namespace DataLayer
                 {
                     item.Customer = customerFromDb;
                 }
-                List<Clothes> clothes = new List<Clothes>(item.Clothes.Count);
+                List<OrderClothes> clothes = new List<OrderClothes>(item.OrderClothes.Count);
 
-                foreach (Clothes c in clothes)
+                foreach (OrderClothes c in clothes)
                 {
-                    Clothes clothesFromDb = await dbContext.Clothes.FindAsync(c.Id);
+                    OrderClothes clothesFromDb = await dbContext.OrdersClothes.FindAsync(c.ClothesId);
 
                     if (clothesFromDb != null)
                     {
@@ -41,8 +41,21 @@ namespace DataLayer
                         clothes.Add(c);
                     }
                 }
-
-                item.Clothes = clothes;
+                List<Coupon> coupons = new List<Coupon>(item.Coupons.Count);
+                foreach (Coupon c in item.Coupons)
+                {
+                    Coupon couponFromDb = await dbContext.Coupons.FindAsync(c.Id);
+                    if (couponFromDb!= null)
+                    {
+                        coupons.Add(couponFromDb);
+                    }
+                    else
+                    {
+                        coupons.Add(c);
+                    }
+                }
+                item.Coupons = coupons;
+                item.OrderClothes = clothes;
                 dbContext.Orders.Add(item);
                 await dbContext.SaveChangesAsync();
             }
@@ -84,7 +97,9 @@ namespace DataLayer
                 if (useNavigationalProperties)
                 {
                     query = query.Include(o => o.Customer)
-                        .Include(o => o.Clothes);
+                        .Include(oc => oc.OrderClothes).ThenInclude(o=>o.Clothes)
+                        .Include(c=>c.Coupons)
+                        .Include(s => s.Shipping);
                 }
 
                 if (isReadOnly)
@@ -109,7 +124,9 @@ namespace DataLayer
                 if (useNavigationalProperties)
                 {
                     query = query.Include(o => o.Customer)
-                        .Include(o => o.Clothes);
+                        .Include(o => o.OrderClothes).ThenInclude (o=>o.Clothes)
+                        .Include(c=>c.Coupons)
+                        .Include(s=>s.Shipping);
                 }
 
                 if (isReadOnly)
@@ -136,6 +153,9 @@ namespace DataLayer
                 orderFromDb.Date = item.Date;
                 orderFromDb.Status = item.Status;
                 orderFromDb.Customer = item.Customer;
+                orderFromDb.Coupons = item.Coupons;
+                orderFromDb.Shipping = item.Shipping;
+                orderFromDb.OrderClothes = item.OrderClothes;
 
                 if (useNavigationalProperties)
                 {
@@ -150,11 +170,22 @@ namespace DataLayer
                         orderFromDb.Customer = item.Customer;
                     }
 
-                    List<Clothes> clothes = new List<Clothes>(item.Clothes.Count);
+                    Shipping shippingFromDb = await dbContext.Shipping.FindAsync(item.ShippingId);
 
-                    foreach (Clothes c in clothes)
+                    if (shippingFromDb != null)
                     {
-                        Clothes clothesFromDb = await dbContext.Clothes.FindAsync(c.Id);
+                        orderFromDb.Shipping = shippingFromDb;
+                    }
+                    else
+                    {
+                        orderFromDb.Shipping = item.Shipping;
+                    }
+
+                    List<OrderClothes> clothes = new List<OrderClothes>(item.OrderClothes.Count);
+
+                    foreach (OrderClothes c in clothes)
+                    {
+                        OrderClothes clothesFromDb = await dbContext.OrdersClothes.FindAsync(c.ClothesId);
 
                         if (clothesFromDb != null)
                         {
@@ -165,8 +196,21 @@ namespace DataLayer
                             clothes.Add(c);
                         }
                     }
-
-                    orderFromDb.Clothes = clothes;
+                    List<Coupon> coupon = new List<Coupon>();
+                    foreach (Coupon o in item.Coupons)
+                    {
+                        Coupon couponFromDb = dbContext.Coupons.Find(o.Id);
+                        if (couponFromDb != null)
+                        {
+                            coupon.Add(couponFromDb);
+                        }
+                        else
+                        {
+                            coupon.Add(o);
+                        }
+                    }
+                    orderFromDb.Coupons = coupon;
+                    orderFromDb.OrderClothes = clothes;
                 }
 
                 await dbContext.SaveChangesAsync();

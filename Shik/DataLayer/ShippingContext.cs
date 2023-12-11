@@ -2,47 +2,46 @@
 using Microsoft.EntityFrameworkCore;
 using System;
 using System.Collections.Generic;
-using System.Data;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
 namespace DataLayer
 {
-    public class ClothesContext : IDB<Clothes, int>
+    public class ShippingContext : IDB<Shipping, int>
     {
         private readonly ShikDBContext dbContext;
-        public ClothesContext(ShikDBContext dBContext)
+        public ShippingContext(ShikDBContext dBContext)
         {
             this.dbContext = dBContext;
         }
-        public async Task CreateAsync(Clothes item)
+        public async Task CreateAsync(Shipping item)
         {
             try
             {
-                dbContext.Clothes.Add(item);
+                dbContext.Shipping.Add(item);
                 await dbContext.SaveChangesAsync();
             }
             catch (Exception)
             {
+
                 throw;
             }
-            
         }
 
         public async Task DeleteAsync(int key)
         {
             try
             {
-                Clothes clothesFromDb = await ReadAsync(key);
-                if (clothesFromDb != null)
+                Shipping shippingFromDb = await ReadAsync(key, false, false);
+                if (shippingFromDb == null)
                 {
-                    dbContext.Clothes.Remove(clothesFromDb);
+                    dbContext.Shipping.Remove(shippingFromDb);
                     await dbContext.SaveChangesAsync();
                 }
                 else
                 {
-                    throw new ArgumentException("This kind of clothes does not excist");
+                    throw new ArgumentException("This shipping does not excist!");
                 }
             }
             catch (Exception)
@@ -50,17 +49,16 @@ namespace DataLayer
 
                 throw;
             }
-            
         }
 
-        public async Task<ICollection<Clothes>> ReadAllAsync(bool useNavigationalProperties = false, bool isReadOnly = true)
+        public async Task<ICollection<Shipping>> ReadAllAsync(bool useNavigationalProperties = false, bool isReadOnly = true)
         {
             try
             {
-                IQueryable<Clothes> query = dbContext.Clothes;
+                IQueryable<Shipping> query = dbContext.Shipping;
                 if (useNavigationalProperties)
                 {
-                    query = query.Include(p => p.OrderClothes).Include(c=>c.Customers);
+                    query = query.Include(o => o.Orders);
                 }
                 if (isReadOnly)
                 {
@@ -75,20 +73,20 @@ namespace DataLayer
             }
         }
 
-        public async Task<Clothes> ReadAsync(int key, bool useNavigationalProperties = false, bool isReadOnly = true)
+        public async Task<Shipping> ReadAsync(int key, bool useNavigationalProperties = false, bool isReadOnly = true)
         {
             try
             {
-                IQueryable<Clothes> query = dbContext.Clothes;
+                IQueryable<Shipping> query = dbContext.Shipping;
                 if (useNavigationalProperties)
                 {
-                    query = query.Include(p => p.OrderClothes).Include(c=>c.Customers);
+                    query = query.Include(o => o.Orders);
                 }
                 if (isReadOnly)
                 {
                     query = query.AsNoTrackingWithIdentityResolution();
                 }
-                return await query.FirstOrDefaultAsync(c=>c.Id==key);
+                return await query.FirstOrDefaultAsync(c => c.Id == key);
             }
             catch (Exception)
             {
@@ -97,41 +95,38 @@ namespace DataLayer
             }
         }
 
-        public async Task UpdateAsync(Clothes item, bool useNavigationalProperties = false)
+        public async Task UpdateAsync(Shipping item, bool useNavigationalProperties = false)
         {
             try
             {
-                Clothes clothesFromDb =await ReadAsync(item.Id, useNavigationalProperties,false);
-                if (clothesFromDb == null)
+                Shipping shippingFromDb = await ReadAsync(item.Id, useNavigationalProperties);
+                if (shippingFromDb == null)
                 {
                     await CreateAsync(item);
                     return;
                 }
-
-                clothesFromDb.Name = item.Name;
-                clothesFromDb.Price= item.Price;
-                clothesFromDb.Description= item.Description;
-                clothesFromDb.Size= item.Size;
+                shippingFromDb.Shipping_Method = item.Shipping_Method;
+                shippingFromDb.Shipping_cost = item.Shipping_cost;
+                shippingFromDb.Orders= item.Orders;
+                shippingFromDb.DeliveryTime = item.DeliveryTime;
                 if (useNavigationalProperties)
                 {
-                    List<OrderClothes> orderClothes = new List<OrderClothes>();
-
-                    foreach (OrderClothes oc in item.OrderClothes)
+                    List<Order> orders = new List<Order>();
+                    foreach (Order o in item.Orders)
                     {
-                        OrderClothes poFromDb = dbContext.OrdersClothes.Find(oc.ClothesId, oc.OrderId);
-
-                        if (poFromDb != null)
+                        Order orderFromDb = dbContext.Orders.Find(o.Id);
+                        if (orderFromDb != null)
                         {
-                            orderClothes.Add(poFromDb);
+                            orders.Add(orderFromDb);
                         }
                         else
                         {
-                            orderClothes.Add(oc);
+                            orders.Add(o);
                         }
                     }
-                    clothesFromDb.OrderClothes = orderClothes;
+                    shippingFromDb.Orders = orders;
                 }
-               await dbContext.SaveChangesAsync();
+                await dbContext.SaveChangesAsync();
             }
             catch (Exception)
             {

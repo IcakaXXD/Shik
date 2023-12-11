@@ -6,12 +6,11 @@ using System.Threading.Tasks;
 
 namespace Business_Layer
 {
-    public enum Size
-    {       
-         S=0, 
-         M=1,
-         L=2,
-         XL=3,
-         New=4
+    public enum Shipping_method
+    {
+        New=0,
+        By_truck=1,
+        By_Plane=2,
+        By_Ship=3
     }
 }

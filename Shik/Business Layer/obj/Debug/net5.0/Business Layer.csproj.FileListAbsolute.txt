@@ -1,0 +1,11 @@
+C:\Users\hrist\Documents\programirane\Shik\Business Layer\bin\Debug\net5.0\Business Layer.deps.json
+C:\Users\hrist\Documents\programirane\Shik\Business Layer\bin\Debug\net5.0\Business Layer.dll
+C:\Users\hrist\Documents\programirane\Shik\Business Layer\bin\Debug\net5.0\Business Layer.pdb
+C:\Users\hrist\Documents\programirane\Shik\Business Layer\obj\Debug\net5.0\Business Layer.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\hrist\Documents\programirane\Shik\Business Layer\obj\Debug\net5.0\Business Layer.AssemblyInfoInputs.cache
+C:\Users\hrist\Documents\programirane\Shik\Business Layer\obj\Debug\net5.0\Business Layer.AssemblyInfo.cs
+C:\Users\hrist\Documents\programirane\Shik\Business Layer\obj\Debug\net5.0\Business Layer.csproj.CoreCompileInputs.cache
+C:\Users\hrist\Documents\programirane\Shik\Business Layer\obj\Debug\net5.0\Business Layer.dll
+C:\Users\hrist\Documents\programirane\Shik\Business Layer\obj\Debug\net5.0\refint\Business Layer.dll
+C:\Users\hrist\Documents\programirane\Shik\Business Layer\obj\Debug\net5.0\Business Layer.pdb
+C:\Users\hrist\Documents\programirane\Shik\Business Layer\obj\Debug\net5.0\ref\Business Layer.dll

@@ -1,0 +1,18 @@
+C:\Users\hrist\Documents\programirane\Shik\DataLayer\bin\Debug\net5.0\DataLayer.deps.json
+C:\Users\hrist\Documents\programirane\Shik\DataLayer\bin\Debug\net5.0\DataLayer.runtimeconfig.json
+C:\Users\hrist\Documents\programirane\Shik\DataLayer\bin\Debug\net5.0\DataLayer.runtimeconfig.dev.json
+C:\Users\hrist\Documents\programirane\Shik\DataLayer\bin\Debug\net5.0\DataLayer.dll
+C:\Users\hrist\Documents\programirane\Shik\DataLayer\bin\Debug\net5.0\DataLayer.pdb
+C:\Users\hrist\Documents\programirane\Shik\DataLayer\bin\Debug\net5.0\Business Layer.dll
+C:\Users\hrist\Documents\programirane\Shik\DataLayer\bin\Debug\net5.0\Business Layer.pdb
+C:\Users\hrist\Documents\programirane\Shik\DataLayer\obj\Debug\net5.0\DataLayer.csproj.AssemblyReference.cache
+C:\Users\hrist\Documents\programirane\Shik\DataLayer\obj\Debug\net5.0\DataLayer.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\hrist\Documents\programirane\Shik\DataLayer\obj\Debug\net5.0\DataLayer.AssemblyInfoInputs.cache
+C:\Users\hrist\Documents\programirane\Shik\DataLayer\obj\Debug\net5.0\DataLayer.AssemblyInfo.cs
+C:\Users\hrist\Documents\programirane\Shik\DataLayer\obj\Debug\net5.0\DataLayer.csproj.CoreCompileInputs.cache
+C:\Users\hrist\Documents\programirane\Shik\DataLayer\obj\Debug\net5.0\DataLayer.csproj.CopyComplete
+C:\Users\hrist\Documents\programirane\Shik\DataLayer\obj\Debug\net5.0\DataLayer.dll
+C:\Users\hrist\Documents\programirane\Shik\DataLayer\obj\Debug\net5.0\refint\DataLayer.dll
+C:\Users\hrist\Documents\programirane\Shik\DataLayer\obj\Debug\net5.0\DataLayer.pdb
+C:\Users\hrist\Documents\programirane\Shik\DataLayer\obj\Debug\net5.0\DataLayer.genruntimeconfig.cache
+C:\Users\hrist\Documents\programirane\Shik\DataLayer\obj\Debug\net5.0\ref\DataLayer.dll
