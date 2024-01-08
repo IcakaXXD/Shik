@@ -9,3 +9,15 @@ C:\Users\hrist\Documents\programirane\Shik\Business Layer\obj\Debug\net5.0\Busin
 C:\Users\hrist\Documents\programirane\Shik\Business Layer\obj\Debug\net5.0\refint\Business Layer.dll
 C:\Users\hrist\Documents\programirane\Shik\Business Layer\obj\Debug\net5.0\Business Layer.pdb
 C:\Users\hrist\Documents\programirane\Shik\Business Layer\obj\Debug\net5.0\ref\Business Layer.dll
+D:\daskalo\za ivan iliev\Shik\Shik\Business Layer\bin\Debug\net5.0\Business Layer.deps.json
+D:\daskalo\za ivan iliev\Shik\Shik\Business Layer\bin\Debug\net5.0\Business Layer.dll
+D:\daskalo\za ivan iliev\Shik\Shik\Business Layer\bin\Debug\net5.0\Business Layer.pdb
+D:\daskalo\za ivan iliev\Shik\Shik\Business Layer\obj\Debug\net5.0\Business Layer.GeneratedMSBuildEditorConfig.editorconfig
+D:\daskalo\za ivan iliev\Shik\Shik\Business Layer\obj\Debug\net5.0\Business Layer.AssemblyInfoInputs.cache
+D:\daskalo\za ivan iliev\Shik\Shik\Business Layer\obj\Debug\net5.0\Business Layer.AssemblyInfo.cs
+D:\daskalo\za ivan iliev\Shik\Shik\Business Layer\obj\Debug\net5.0\Business Layer.csproj.CoreCompileInputs.cache
+D:\daskalo\za ivan iliev\Shik\Shik\Business Layer\obj\Debug\net5.0\Business Layer.sourcelink.json
+D:\daskalo\za ivan iliev\Shik\Shik\Business Layer\obj\Debug\net5.0\Business Layer.dll
+D:\daskalo\za ivan iliev\Shik\Shik\Business Layer\obj\Debug\net5.0\refint\Business Layer.dll
+D:\daskalo\za ivan iliev\Shik\Shik\Business Layer\obj\Debug\net5.0\Business Layer.pdb
+D:\daskalo\za ivan iliev\Shik\Shik\Business Layer\obj\Debug\net5.0\ref\Business Layer.dll

@@ -11,7 +11,7 @@ namespace DataLayer
         {
                 
         }
-        public ShikDBContext(DbContextOptions<ShikDBContext> contextOptions):base(contextOptions)
+        public ShikDBContext(DbContextOptions contextOptions):base(contextOptions)
         {
             
         }
