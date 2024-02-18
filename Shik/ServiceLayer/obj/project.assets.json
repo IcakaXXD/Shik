@@ -2086,23 +2086,23 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\Jordan Georgiev\\.nuget\\packages\\": {},
-    "D:\\vstudio\\shared\\NuGetPackages": {}
+    "C:\\Users\\Selin\\.nuget\\packages\\": {},
+    "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\daskalo\\za ivan iliev\\Shik\\Shik\\ServiceLayer\\ServiceLayer.csproj",
+      "projectUniqueName": "C:\\Users\\Selin\\Documents\\GitHub\\Shik\\Shik\\ServiceLayer\\ServiceLayer.csproj",
       "projectName": "ServiceLayer",
-      "projectPath": "D:\\daskalo\\za ivan iliev\\Shik\\Shik\\ServiceLayer\\ServiceLayer.csproj",
-      "packagesPath": "C:\\Users\\Jordan Georgiev\\.nuget\\packages\\",
-      "outputPath": "D:\\daskalo\\za ivan iliev\\Shik\\Shik\\ServiceLayer\\obj\\",
+      "projectPath": "C:\\Users\\Selin\\Documents\\GitHub\\Shik\\Shik\\ServiceLayer\\ServiceLayer.csproj",
+      "packagesPath": "C:\\Users\\Selin\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\Selin\\Documents\\GitHub\\Shik\\Shik\\ServiceLayer\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
-        "D:\\vstudio\\shared\\NuGetPackages"
+        "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
       ],
       "configFilePaths": [
-        "C:\\Users\\Jordan Georgiev\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\Selin\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
@@ -2118,8 +2118,8 @@
         "net5.0": {
           "targetAlias": "net5.0",
           "projectReferences": {
-            "D:\\daskalo\\za ivan iliev\\Shik\\Shik\\DataLayer\\DataLayer.csproj": {
-              "projectPath": "D:\\daskalo\\za ivan iliev\\Shik\\Shik\\DataLayer\\DataLayer.csproj"
+            "C:\\Users\\Selin\\Documents\\GitHub\\Shik\\Shik\\DataLayer\\DataLayer.csproj": {
+              "projectPath": "C:\\Users\\Selin\\Documents\\GitHub\\Shik\\Shik\\DataLayer\\DataLayer.csproj"
             }
           }
         }
@@ -2144,12 +2144,26 @@
         ],
         "assetTargetFallback": true,
         "warn": true,
+        "downloadDependencies": [
+          {
+            "name": "Microsoft.AspNetCore.App.Ref",
+            "version": "[5.0.0, 5.0.0]"
+          },
+          {
+            "name": "Microsoft.NETCore.App.Ref",
+            "version": "[5.0.0, 5.0.0]"
+          },
+          {
+            "name": "Microsoft.WindowsDesktop.App.Ref",
+            "version": "[5.0.0, 5.0.0]"
+          }
+        ],
         "frameworkReferences": {
           "Microsoft.NETCore.App": {
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.100\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.306\\RuntimeIdentifierGraph.json"
       }
     }
   }
