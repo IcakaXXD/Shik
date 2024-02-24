@@ -19,7 +19,7 @@ namespace Business_Layer
         public Shipping(decimal shipping_cost)
         {
             Shipping_cost = shipping_cost;
-            Shipping_Method = Shipping_method.New;
+            Shipping_Method = Shipping_method.New; //icak shte te ubiq kvo izobshto znachi tva
             Orders = new List<Order>();
         }
         public Shipping()

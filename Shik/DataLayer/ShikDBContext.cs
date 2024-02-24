@@ -1,5 +1,4 @@
 ﻿using Microsoft.EntityFrameworkCore;
-using MySql.EntityFrameworkCore.Extensions;
 using Business_Layer;
 using System;
 
@@ -17,7 +16,7 @@ namespace DataLayer
         }
         protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
         {
-            optionsBuilder.UseMySQL("server=localhost;Port=3306;database=ShikDb;Uid=root;Pwd=root;CharSet=utf8;");
+            optionsBuilder.UseSqlServer("Server=DESKTOP-PTKBD3O\\SQLEXPRESS01;Database=ShikDb;Trusted_Connection=True");
             base.OnConfiguring(optionsBuilder);
         }
         protected override void OnModelCreating(ModelBuilder modelBuilder)

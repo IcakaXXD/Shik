@@ -1,0 +1,5 @@
+D:\daskalo\za ivan iliev\Shik-main\Shik-main\Shik\PresentationLayer\obj\Debug\net5.0\PresentationLayer.csproj.AssemblyReference.cache
+D:\daskalo\za ivan iliev\Shik-main\Shik-main\Shik\PresentationLayer\obj\Debug\net5.0\PresentationLayer.GeneratedMSBuildEditorConfig.editorconfig
+D:\daskalo\za ivan iliev\Shik-main\Shik-main\Shik\PresentationLayer\obj\Debug\net5.0\PresentationLayer.AssemblyInfoInputs.cache
+D:\daskalo\za ivan iliev\Shik-main\Shik-main\Shik\PresentationLayer\obj\Debug\net5.0\PresentationLayer.AssemblyInfo.cs
+D:\daskalo\za ivan iliev\Shik-main\Shik-main\Shik\PresentationLayer\obj\Debug\net5.0\PresentationLayer.csproj.CoreCompileInputs.cache

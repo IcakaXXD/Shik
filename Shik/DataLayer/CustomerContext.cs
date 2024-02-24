@@ -33,7 +33,7 @@ namespace DataLayer
             try
             {
                 Customer customerFromDb = await ReadAsync(key,false,false);
-                if (customerFromDb == null)
+                if (customerFromDb != null)
                 {
                     dbContext.Customers.Remove(customerFromDb);
                     await dbContext.SaveChangesAsync();
@@ -72,7 +72,7 @@ namespace DataLayer
             }
         }
 
-        public async Task<Customer> ReadAsync(int key, bool useNavigationalProperties = false, bool isReadOnly = true)
+        public async Task<Customer> ReadAsync(int key, bool useNavigationalProperties = false, bool isReadOnly = false)
         {
             try
             {

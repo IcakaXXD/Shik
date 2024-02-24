@@ -8,7 +8,7 @@ using System.Threading.Tasks;
 
 namespace ServiceLayer
 {
-    public class ShippingManager
+    public class ShippingManager : IManager
     {
         private readonly ShippingContext shippingContext;
 

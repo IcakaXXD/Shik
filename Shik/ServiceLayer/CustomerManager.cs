@@ -2,13 +2,14 @@
 using DataLayer;
 using System;
 using System.Collections.Generic;
+using System.Diagnostics.Contracts;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
 namespace ServiceLayer
 {
-    public class CustomerManager
+    public class CustomerManager : IManager
     {
         private readonly CustomerContext customerContext;
 
@@ -22,7 +23,7 @@ namespace ServiceLayer
             await customerContext.CreateAsync(customer);
         }
 
-        public async Task<Customer> ReadAsync(int key, bool useNavigationalProperties = false, bool isReadOnly = true)
+        public async Task<Customer> ReadAsync(int key, bool useNavigationalProperties = false, bool isReadOnly = false)
         {
             return await customerContext.ReadAsync(key, useNavigationalProperties);
         }

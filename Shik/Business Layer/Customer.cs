@@ -24,9 +24,10 @@ namespace Business_Layer
         {
             Orders= new List<Order>();
         }
-        public Customer( string name)
+        public Customer( string name, string password)
         {
             Name = name;
+            Password = password;
             Orders= new List<Order>();
         }
     }

@@ -8,7 +8,7 @@ using System.Threading.Tasks;
 
 namespace ServiceLayer
 {
-    public class OrderManager
+    public class OrderManager : IManager
     {
         private readonly OrderContext orderContext;
 

@@ -25,7 +25,7 @@ namespace TestingLayer
         [SetUp]
         public async void CreateCustomer()
         {
-            customer1 = new Customer("Test");
+            customer1 = new Customer("Test","Pass");
             await cusContext.CreateAsync(customer1);
             order1 = new Order("address", customer1, shipping1);
             await ordContext.CreateAsync(order1);
@@ -48,11 +48,11 @@ namespace TestingLayer
         {
 
             // Arrange
-            Customer newCustomer = new Customer();
+            Customer newCustomer = new Customer("test", "password");
 
             // Act
             int customersBefore = SetupFixture.dbContext.Customers.Count();
-            await cusContext.CreateAsync(customer1);
+            await cusContext.CreateAsync(newCustomer);
 
             // Assert
             int customersAfter = SetupFixture.dbContext.Customers.Count();

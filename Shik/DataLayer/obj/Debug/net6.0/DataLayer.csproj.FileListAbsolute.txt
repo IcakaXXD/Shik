@@ -1,0 +1,17 @@
+D:\daskalo\za ivan iliev\Shik-main\Shik-main\Shik\DataLayer\bin\Debug\net6.0\DataLayer.deps.json
+D:\daskalo\za ivan iliev\Shik-main\Shik-main\Shik\DataLayer\bin\Debug\net6.0\DataLayer.runtimeconfig.json
+D:\daskalo\za ivan iliev\Shik-main\Shik-main\Shik\DataLayer\bin\Debug\net6.0\DataLayer.dll
+D:\daskalo\za ivan iliev\Shik-main\Shik-main\Shik\DataLayer\bin\Debug\net6.0\DataLayer.pdb
+D:\daskalo\za ivan iliev\Shik-main\Shik-main\Shik\DataLayer\bin\Debug\net6.0\Business Layer.dll
+D:\daskalo\za ivan iliev\Shik-main\Shik-main\Shik\DataLayer\bin\Debug\net6.0\Business Layer.pdb
+D:\daskalo\za ivan iliev\Shik-main\Shik-main\Shik\DataLayer\obj\Debug\net6.0\DataLayer.csproj.AssemblyReference.cache
+D:\daskalo\za ivan iliev\Shik-main\Shik-main\Shik\DataLayer\obj\Debug\net6.0\DataLayer.GeneratedMSBuildEditorConfig.editorconfig
+D:\daskalo\za ivan iliev\Shik-main\Shik-main\Shik\DataLayer\obj\Debug\net6.0\DataLayer.AssemblyInfoInputs.cache
+D:\daskalo\za ivan iliev\Shik-main\Shik-main\Shik\DataLayer\obj\Debug\net6.0\DataLayer.AssemblyInfo.cs
+D:\daskalo\za ivan iliev\Shik-main\Shik-main\Shik\DataLayer\obj\Debug\net6.0\DataLayer.csproj.CoreCompileInputs.cache
+D:\daskalo\za ivan iliev\Shik-main\Shik-main\Shik\DataLayer\obj\Debug\net6.0\DataLayer.csproj.CopyComplete
+D:\daskalo\za ivan iliev\Shik-main\Shik-main\Shik\DataLayer\obj\Debug\net6.0\DataLayer.dll
+D:\daskalo\za ivan iliev\Shik-main\Shik-main\Shik\DataLayer\obj\Debug\net6.0\refint\DataLayer.dll
+D:\daskalo\za ivan iliev\Shik-main\Shik-main\Shik\DataLayer\obj\Debug\net6.0\DataLayer.pdb
+D:\daskalo\za ivan iliev\Shik-main\Shik-main\Shik\DataLayer\obj\Debug\net6.0\DataLayer.genruntimeconfig.cache
+D:\daskalo\za ivan iliev\Shik-main\Shik-main\Shik\DataLayer\obj\Debug\net6.0\ref\DataLayer.dll

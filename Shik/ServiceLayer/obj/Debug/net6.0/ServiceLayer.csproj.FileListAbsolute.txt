@@ -1,0 +1,19 @@
+D:\daskalo\za ivan iliev\Shik-main\Shik-main\Shik\ServiceLayer\bin\Debug\net6.0\ServiceLayer.deps.json
+D:\daskalo\za ivan iliev\Shik-main\Shik-main\Shik\ServiceLayer\bin\Debug\net6.0\ServiceLayer.dll
+D:\daskalo\za ivan iliev\Shik-main\Shik-main\Shik\ServiceLayer\bin\Debug\net6.0\ServiceLayer.pdb
+D:\daskalo\za ivan iliev\Shik-main\Shik-main\Shik\ServiceLayer\bin\Debug\net6.0\Business Layer.dll
+D:\daskalo\za ivan iliev\Shik-main\Shik-main\Shik\ServiceLayer\bin\Debug\net6.0\DataLayer.dll
+D:\daskalo\za ivan iliev\Shik-main\Shik-main\Shik\ServiceLayer\bin\Debug\net6.0\DataLayer.pdb
+D:\daskalo\za ivan iliev\Shik-main\Shik-main\Shik\ServiceLayer\bin\Debug\net6.0\Business Layer.pdb
+D:\daskalo\za ivan iliev\Shik-main\Shik-main\Shik\ServiceLayer\obj\Debug\net6.0\ServiceLayer.csproj.AssemblyReference.cache
+D:\daskalo\za ivan iliev\Shik-main\Shik-main\Shik\ServiceLayer\obj\Debug\net6.0\ServiceLayer.GeneratedMSBuildEditorConfig.editorconfig
+D:\daskalo\za ivan iliev\Shik-main\Shik-main\Shik\ServiceLayer\obj\Debug\net6.0\ServiceLayer.AssemblyInfoInputs.cache
+D:\daskalo\za ivan iliev\Shik-main\Shik-main\Shik\ServiceLayer\obj\Debug\net6.0\ServiceLayer.AssemblyInfo.cs
+D:\daskalo\za ivan iliev\Shik-main\Shik-main\Shik\ServiceLayer\obj\Debug\net6.0\ServiceLayer.csproj.CoreCompileInputs.cache
+D:\daskalo\za ivan iliev\Shik-main\Shik-main\Shik\ServiceLayer\obj\Debug\net6.0\ServiceLayer.csproj.CopyComplete
+D:\daskalo\za ivan iliev\Shik-main\Shik-main\Shik\ServiceLayer\obj\Debug\net6.0\ServiceLayer.dll
+D:\daskalo\za ivan iliev\Shik-main\Shik-main\Shik\ServiceLayer\obj\Debug\net6.0\refint\ServiceLayer.dll
+D:\daskalo\za ivan iliev\Shik-main\Shik-main\Shik\ServiceLayer\obj\Debug\net6.0\ServiceLayer.pdb
+D:\daskalo\za ivan iliev\Shik-main\Shik-main\Shik\ServiceLayer\obj\Debug\net6.0\ref\ServiceLayer.dll
+D:\daskalo\za ivan iliev\Shik-main\Shik-main\Shik\ServiceLayer\bin\Debug\net6.0\ServiceLayer.runtimeconfig.json
+D:\daskalo\za ivan iliev\Shik-main\Shik-main\Shik\ServiceLayer\obj\Debug\net6.0\ServiceLayer.genruntimeconfig.cache

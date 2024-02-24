@@ -1,28 +1,28 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Selin\\Documents\\GitHub\\Shik\\Shik\\Business Layer\\Business Layer.csproj": {}
+    "D:\\daskalo\\za ivan iliev\\Shik-main\\Shik-main\\Shik\\Business Layer\\Business Layer.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Selin\\Documents\\GitHub\\Shik\\Shik\\Business Layer\\Business Layer.csproj": {
+    "D:\\daskalo\\za ivan iliev\\Shik-main\\Shik-main\\Shik\\Business Layer\\Business Layer.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Selin\\Documents\\GitHub\\Shik\\Shik\\Business Layer\\Business Layer.csproj",
+        "projectUniqueName": "D:\\daskalo\\za ivan iliev\\Shik-main\\Shik-main\\Shik\\Business Layer\\Business Layer.csproj",
         "projectName": "Business Layer",
-        "projectPath": "C:\\Users\\Selin\\Documents\\GitHub\\Shik\\Shik\\Business Layer\\Business Layer.csproj",
-        "packagesPath": "C:\\Users\\Selin\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Selin\\Documents\\GitHub\\Shik\\Shik\\Business Layer\\obj\\",
+        "projectPath": "D:\\daskalo\\za ivan iliev\\Shik-main\\Shik-main\\Shik\\Business Layer\\Business Layer.csproj",
+        "packagesPath": "C:\\Users\\Jordan Georgiev\\.nuget\\packages\\",
+        "outputPath": "D:\\daskalo\\za ivan iliev\\Shik-main\\Shik-main\\Shik\\Business Layer\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
-          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+          "D:\\vstudio\\shared\\NuGetPackages"
         ],
         "configFilePaths": [
-          "C:\\Users\\Selin\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\Jordan Georgiev\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
-          "net5.0"
+          "net6.0"
         ],
         "sources": {
           "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
@@ -30,8 +30,8 @@
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
-          "net5.0": {
-            "targetAlias": "net5.0",
+          "net6.0": {
+            "targetAlias": "net6.0",
             "projectReferences": {}
           }
         },
@@ -42,8 +42,34 @@
         }
       },
       "frameworks": {
-        "net5.0": {
-          "targetAlias": "net5.0",
+        "net6.0": {
+          "targetAlias": "net6.0",
+          "dependencies": {
+            "Microsoft.EntityFrameworkCore": {
+              "target": "Package",
+              "version": "[6.0.27, )"
+            },
+            "Microsoft.EntityFrameworkCore.Design": {
+              "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[6.0.27, )"
+            },
+            "Microsoft.EntityFrameworkCore.InMemory": {
+              "target": "Package",
+              "version": "[6.0.27, )"
+            },
+            "Microsoft.EntityFrameworkCore.SqlServer": {
+              "target": "Package",
+              "version": "[6.0.27, )"
+            },
+            "Microsoft.EntityFrameworkCore.Tools": {
+              "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[6.0.27, )"
+            }
+          },
           "imports": [
             "net461",
             "net462",
@@ -55,26 +81,12 @@
           ],
           "assetTargetFallback": true,
           "warn": true,
-          "downloadDependencies": [
-            {
-              "name": "Microsoft.AspNetCore.App.Ref",
-              "version": "[5.0.0, 5.0.0]"
-            },
-            {
-              "name": "Microsoft.NETCore.App.Ref",
-              "version": "[5.0.0, 5.0.0]"
-            },
-            {
-              "name": "Microsoft.WindowsDesktop.App.Ref",
-              "version": "[5.0.0, 5.0.0]"
-            }
-          ],
           "frameworkReferences": {
             "Microsoft.NETCore.App": {
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.306\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.100\\RuntimeIdentifierGraph.json"
         }
       }
     }

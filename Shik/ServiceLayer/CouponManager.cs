@@ -8,7 +8,7 @@ using System.Threading.Tasks;
 
 namespace ServiceLayer
 {
-    public class CouponManager
+    public class CouponManager : IManager
     {
         private readonly CouponContext couponContext;
 

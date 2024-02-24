@@ -8,7 +8,7 @@ using System.Threading.Tasks;
 
 namespace ServiceLayer
 {
-    public class ClothesManager
+    public class ClothesManager : IManager
     {
         private readonly ClothesContext clothesContext;
 

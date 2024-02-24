@@ -34,7 +34,7 @@ namespace DataLayer
             try
             {
                 Shipping shippingFromDb = await ReadAsync(key, false, false);
-                if (shippingFromDb == null)
+                if (shippingFromDb != null)
                 {
                     dbContext.Shipping.Remove(shippingFromDb);
                     await dbContext.SaveChangesAsync();
